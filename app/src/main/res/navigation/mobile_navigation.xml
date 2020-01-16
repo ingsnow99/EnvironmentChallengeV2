@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_daily_challenge">
+
+    <fragment
+        android:id="@+id/nav_daily_challenge"
+        android:name="com.example.environmentchallenge.ui.daily_challenge.DailyChallengeFragment"
+        android:label="@string/menu_daily_challenge"
+        tools:layout="@layout/fragment_daily_challenge"/>
+    <fragment
+        android:id="@+id/nav_weekly_challenge"
+        android:name="com.example.environmentchallenge.ui.weekly_challenge.WeeklyChallengeFragment"
+        android:label="@string/menu_weekly_challenge"
+        tools:layout="@layout/fragment_weekly_challenge" />
+    <fragment
+        android:id="@+id/nav_ranking"
+        android:name="com.example.environmentchallenge.ui.ranking.RankingFragment"
+        android:label="@string/menu_ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.environmentchallenge.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.environmentchallenge.ui.about_us.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>
